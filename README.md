@@ -1,9 +1,6 @@
 # EmwiGallery
-Dokumentation
-====================================
- 
-Om Emwi Gallery
-------------------------------------
+
+<h2>Om Emwi Gallery</h2>
 
 <p>Emwi Gallery är en enkelt galleri med slidefunktion för att enkelt men professionellt visa dina alster. Dina besökare kan enkelt navigera bland bilderna via pilarna, piltangenterna eller helt enkelt låta bildspelet rulla själv för att kunna luta sig tillbaka och njuta. Om besökaren skulle vilja stänga galleriet så görs detta via ESCknappen eller att klicka utanför bilden(ej på pilarna). Bildspelet kommer automatiskt att avslutas när bilderna är slut. </p>
 
@@ -32,7 +29,7 @@ Installation/implementation
 &lt;/div&gt;</code></div></p>
 
 <p><b>Inkludera detta script efter bilderna för att initiera galleriet</b><br />
-<div class="codeblock"><code><code>&lt;script&gt;<br /> 
+<div class="codeblock"><code>&lt;script&gt;<br /> 
     $(document).ready(function () {<br />
         // Initiate the Gallery<br />
         $('#emwi-gallery').showGallery({<br />
