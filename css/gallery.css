@@ -1,0 +1,175 @@
+/* general styling rules */
+#emwi-lightbox img,
+#emwi-slider img,
+#emwi-gallery img,
+.emwi-lightbox-group img {
+  border-radius: 5px;
+  border: none;
+}
+
+/* ms-lightbox styling */
+#emwi-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+
+}
+
+.emwi-lightbox-group::after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.emwi-lightbox-group img {
+  float: left;
+  margin: 0 15px 25px 15px;
+}
+
+.emwi-lightbox {
+  cursor: pointer;
+}
+
+#emwi-lightbox {
+  position: fixed;
+  z-index: 11;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#emwi-lightbox img {
+  margin: 10px 10px 0 10px;
+}
+
+#emwi-title-wrap {
+  margin: 0 10px -44px 10px;
+  height: 50px;
+  max-height: 50px;
+  position: relative;
+  top: -54px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 0 0 5px 5px;
+}
+
+#emwi-title {
+  margin: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* ms-gallery styling */
+.emwi-gallery-group {
+  
+}
+
+.emwi-gallery-group img {
+  margin: 7px;
+  cursor: pointer;
+}
+
+.emwi-gallery-group li {
+  display: inline;
+  float: none;
+}
+
+#arrow-right,
+#arrow-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  background: #000;
+  opacity: 0.3;
+}
+
+#arrow-right {
+  right: 20px;
+}
+
+#arrow-left {
+  left: 20px;
+}
+
+#arrow-right:hover,
+#arrow-left:hover {
+  opacity: 0.8;
+}
+
+#arrow-right-icon,
+#arrow-left-icon {
+  position: absolute;
+}
+
+#arrow-right-icon {
+  top: 10px;
+  right: 15px;
+}
+
+#arrow-left-icon {
+  top: 10px;
+  left: 14px;
+}
+
+#arrow-right-icon {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+}
+
+#arrow-left-icon {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-right: 15px solid #fff;
+}
+
+#counter {
+  margin: 10px;
+  text-align: right;
+}
+
+#emwi-gallery li  {
+  text-align: center;
+}
+
+#emwi-gallery li::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#emwi-gallery img  {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.thumbHolder {
+min-height:300px;
+}
+
+/* gallery view */
+.thumbHolder img {
+float:left;
+width:230px;
+height:230px;
+/*border:5px solid #7700d2;*/
+border-radius:5px;
+margin:0 3px 22px 3px;
+cursor:pointer;
+}
+
+.thumbHolder img:hover {
+opacity:0.8;
+}
